@@ -1,0 +1,14 @@
+PS: Do not execute the sh's directly!!
+
+To test:
+
+make install		(installs AGL)
+
+make test			(compiles the tester)
+./test				(executes the tester)
+
+The sh files makes the assumption that the project folder is ~/aleva/agl/agl
+
+Requirements:
+- SDL development packages installed (base SDL, image, ttf, mixer)
+- verify the commands in the ".sh" file and adapt to the operating system in use
