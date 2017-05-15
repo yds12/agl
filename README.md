@@ -30,11 +30,15 @@ Clone this repository or download the files. In the terminal, `cd` to the
 root directory of the repository and type (this will create some necessary
 directories and copy the headers):
 
+```
 sudo mkdir /usr/include/agl/
 sudo cp -Rap src/*.h /usr/include/agl/
 mkdir lib
+```
 
 Now `cd` to the `src` directory and type (to compile and install AGL):
 
+```
 make agl          (or make debug for a lib prepared for debug)
 sudo cp -Rap ../lib/*.so /usr/lib/
+```
