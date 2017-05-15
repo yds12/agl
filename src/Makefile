@@ -11,7 +11,7 @@ Headers=game.h support.h drawer.h filemanipulator.h format.h timer.h keyboard.h 
 Libs=-lSDL -lSDL_image -lSDL_mixer -lSDL_ttf
 
 # Build the AGL library
-agl: $(Objs)
+release: $(Objs)
 	g++ -shared -o ../lib/libagl.so $(Objs) $(Libs)
 
 # Build the AGL library for debugging
@@ -80,6 +80,10 @@ floatrectangle.o: floatrectangle.cpp floatrectangle.h
 # Build the test application
 test: test.cpp
 	g++ -fpermissive -g -o test test.cpp -lagl
+
+# Install the AGL library (for debug) on the system
+install_debug:
+	../install_debug.sh
 
 # Install the AGL library on the system
 install:

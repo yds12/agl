@@ -19,29 +19,19 @@ base SDL library (the first version, not SDL 2), SDL mixer, SDL ttf and
 SDL image. In Ubuntu 16.04, for example, you can type this:
 
 ```
-sudo apt-get install libsdl1.2-dev
-sudo apt-get install libsdl-mixer1.2-dev
-sudo apt-get install libsdl-ttf2.0-dev
-sudo apt-get install libsdl-image1.2-dev
+sudo apt-get install libsdl1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl-image1.2-dev
 ```
 
-Now we can just compile AGL and put the files in their places.
-Clone this repository or download the files. In the terminal, `cd` to the
-root directory of the repository and type (this will create some necessary
-directories and copy the headers):
+Now installing AGL is easy. Just type the following in a terminal 
+(from the `src` directory):
 
 ```
-sudo mkdir /usr/include/agl/
-sudo cp -Rap src/*.h /usr/include/agl/
-mkdir lib
+make install
 ```
 
-Now `cd` to the `src` directory and type (to compile and install AGL):
-
-```
-make agl          (or make debug for a lib prepared for debug)
-sudo cp -Rap ../lib/*.so /usr/lib/
-```
+This will install the library for use and development. If you want to use
+AGL for development you can type `make install_debug` instead, to install
+it with debug symbols.
 
 ## Testing
 

@@ -22,7 +22,7 @@
 
 //const string contentPath = "/home/USER/tests/agl/";
 const string fontPath = "/usr/share/fonts/truetype/freefont/FreeMono.ttf";
-const string contentPath = "/home/USER/test/";
+const string contentPath = "/home/yuri/test/agl/";
 
 /* class StupidObject : public AGL::GameObject
 {
@@ -85,6 +85,8 @@ void initialize()
 	ms = new AGL::Mouse;
 	
 	position = new AGL::IntVector2(10, 10);
+
+        return;
 	
 	//font = new AGL::Font(AGL::Format::stringToChar(&(fontPath + "")), 60);
 	sound = new AGL::Sound(AGL_AGR, AGL::Format::stringToChar(&(contentPath + "blink.agr")));
@@ -117,6 +119,7 @@ void initialize()
 
 void loadContent()
 {
+return;
 	//cout << "load" << endl;
 	// ------------ Load content here -----------
 	//const char* filepath = "/home/USER/test/new.agr";
@@ -246,7 +249,7 @@ void draw()
 	
 	AGL::IntVector2 v(*(ms->position));
 	//v = ((*(ms->position)) * 2) + v;
-	drawer->draw(imagem, *(ms->position));
+	//drawer->draw(imagem, *(ms->position));
 	AGL::IntVector2 v1(0,0);
 	AGL::IntVector2 v2(0,100);
 	//const char *t = "uhsuhsu";

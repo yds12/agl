@@ -1,7 +1,8 @@
 deb/usr/*
-lib/*
+lib/*.so
 release/*
 rpm/*
+src/test
 src/*.cbp
 src/*.layout
 src/*.o
