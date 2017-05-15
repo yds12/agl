@@ -14,9 +14,9 @@ The total AGL is composed of this base lib, plus these other ancilary libs:
 
 ## Compiling and Installing AGL
 
-First, install the dependencies (all development versions): the  
+First, install the dependencies (SDL development files): the  
 base SDL library (the first version, not SDL 2), SDL mixer, SDL ttf and 
-SDL image. In Ubuntu 16.04, type this:
+SDL image. In Ubuntu 16.04, for example, you can type this:
 
 ```
 sudo apt-get install libsdl1.2-dev
@@ -52,3 +52,8 @@ program (located in the `src` directory):
 make test
 ./test
 ```
+
+## Notes
+
+Do not use the `sh` files. They are old and consider that the project folder
+is `~/aleva/agl/agl`.
