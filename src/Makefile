@@ -79,7 +79,7 @@ floatrectangle.o: floatrectangle.cpp floatrectangle.h
 
 # Build the test application
 test: test.cpp
-	g++ -g -o test test.cpp -lagl
+	g++ -fpermissive -g -o test test.cpp -lagl
 
 # Install the AGL library on the system
 install:

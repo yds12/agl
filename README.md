@@ -42,3 +42,13 @@ Now `cd` to the `src` directory and type (to compile and install AGL):
 make agl          (or make debug for a lib prepared for debug)
 sudo cp -Rap ../lib/*.so /usr/lib/
 ```
+
+## Testing
+
+If you have also installed AGL Graphics, you can compile and run a test
+program (located in the `src` directory):
+
+```
+make test
+./test
+```
